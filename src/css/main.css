@@ -1,8 +1,50 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 h1 {
   font-size: 2rem;
+}
+.container-head {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(250, 250, 250);
+}
+.container-1 {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+  padding: 30px;
+  /* background-color: rgb(250, 250, 250); */
+}
+.container-2 {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+}
+.container-img {
+  width: 100%;
+  height: 809px;
+  display: flex;
+}
+.image {
+  background-image: url("https://www.scandinavia-design.fr/2805137_Accessories_20Collecton_20in-situ_202019_20Filzbach_v_fullbleed_1440x_202.jpg?v=kmnnnw1vpmd0acw1");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  padding-top: 50px;
+}
+
+h5 {
+  color: white;
+  font-size: 6rem;
 }
