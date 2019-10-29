@@ -8,22 +8,84 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
+
   <body>
-    <div class="container-head">
-      <div class="container-1">
-        <h1><b>My Design</b></h1>
+    <!-------------------- NAV -------------------->
+    <header>
+      <h1 class="logo">my design</h1>
+      <nav>
+        <ul class="menu">
+          <li class="menu-items"><a href="#">Collection</a></li>
+          <li class="menu-items"><a href="#">Products</a></li>
+          <li class="menu-items"><a href="#">Philosophy</a></li>
+        </ul>
+        <div class="cart-item">
+          <div class="count">2</div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="10" cy="20.5" r="1" />
+            <circle cx="18" cy="20.5" r="1" />
+            <path
+              d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <!-------------------- HERO -------------------->
+    <section class="hero">
+      <h2 class="main-title">New Collection</h2>
+    </section>
+
+    <!-------------------- COLLECTION -------------------->
+
+    <section class="collection-container">
+      <div class="container-head">
+        <span class="title"><a href="#">Collection</a></span>
+        <span class="title-2"><a href="#">See more</a></span>
       </div>
-      <div class="container-2">
-        <span>Collection</span>
-        <span>Products</span>
-        <span>Philosophy</span>
+
+      <div class="container-img">
+        <img src="img/img-1.jpg" alt="photo 1" />
+        <img src="img/img-2.jpg" alt="photo 2" />
+        <img src="img/img-3.jpg" alt="photo 3" />
+        <img src="img/img-4.jpg" alt="photo 4" />
+        <img src="img/img-5.jpg" alt="photo 5" />
       </div>
-    </div>
-    <div class="container-img">
-      <div class="image">
-        <h5>New Collection</h5>
+
+      <div class="text">
+        <span class="category"><a href="#">Objets Design</a></span>
+        <span class="link-galery"><a href="#">EXPLORE</a></span>
       </div>
-    </div>
+      <div class="text">
+        <span class="category"><a href="#">Vases</a></span>
+        <span class="link-galery"><a href="#">EXPLORE</a></span>
+      </div>
+      <div class="text">
+        <span class="category"><a href="#">Miroirs</a></span>
+        <span class="link-galery"><a href="#">EXPLORE</a></span>
+      </div>
+      <div class="text">
+        <span class="category"><a href="#">Poufs</a></span>
+        <span class="link-galery"><a href="#">EXPLORE</a></span>
+      </div>
+      <div class="text">
+        <span class="category"><a href="#">Petits-mobiliers</a></span>
+        <span class="link-galery"><a href="#">EXPLORE</a></span>
+      </div>
+    </section>
+
+    <!--------------------------------------------------------------->
     <script src="./js/main.js"></script>
   </body>
 </html>
