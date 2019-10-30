@@ -17,7 +17,9 @@
   --black: #1e1e1e;
   --white: #ffffff;
   --yellow: #ffcc33;
-  --grey: rgba(218, 210, 210, 0.817);
+  --grey-rose: rgba(218, 210, 210, 0.817);
+  --light-grey: rgba(122, 114, 114, 0.438);
+  --grey: rgb(173, 163, 163);
 }
 
 body {
@@ -108,6 +110,8 @@ nav {
   justify-content: space-between;
   padding: 6rem 8rem;
   font-family: "Poppins", sans-serif;
+  height: 0px;
+  position: relative;
 }
 .title {
   color: var(--black);
@@ -115,7 +119,7 @@ nav {
   font-weight: bold;
   padding: 15px 25px;
   border-radius: 4px;
-  background-color: var(--grey);
+  background-color: var(--light-grey);
   transform: rotate(-3deg);
 }
 .title-1 {
@@ -142,10 +146,118 @@ nav {
 .link-category {
   color: var(--black);
   font-size: 1vw;
-  border-bottom: 3px solid var(--grey);
+  border-bottom: 3px solid var(--light-grey);
 }
 .slide {
   margin-right: 50px;
+  margin-top: 50px;
   width: 500px;
   flex-shrink: 0;
+}
+
+/* ----------------------------------- GALLERY ----------------------------- */
+
+.gallery {
+  height: 175vh;
+  background-color: var(--grey-rose);
+  background-size: cover;
+  background-position: center;
+}
+
+.bubble {
+  display: flex;
+  flex-direction: column;
+  border-radius: 160px;
+  background-color: var(--grey);
+  padding: 68px 10px;
+  align-items: center;
+  position: absolute;
+  top: -30px;
+  right: 50px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.product {
+  width: 620px;
+  height: 620px;
+  background-color: var(--white);
+  margin: 50px 50px 0px 50px;
+  transition-delay: transform 35s ease;
+}
+.product img {
+  margin-left: 75px;
+  margin-top: 40px;
+}
+.product img:hover {
+  transform: scale(1.1);
+}
+.top-bar-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+h6 {
+  font-size: 1vw;
+  font-weight: bold;
+}
+h7 {
+  font-size: 0.8vw;
+  margin-right: 10px;
+}
+
+.gamme-color {
+  display: flex;
+  align-items: center;
+}
+.container-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 8rem;
+  height: 0px;
+}
+
+.button {
+  padding: 15px 25px;
+  border-radius: 4px black;
+}
+
+/* ----------------------------------- ABOUT ----------------------------- */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-image: url("https://media.architecturaldigest.com/photos/59ee0a4fce2a2e6477d9a5c7/master/pass/04_Wegner%20room.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box {
+  width: 700px;
+  height: 700px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  padding: 70px;
+  flex-direction: column;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 2vw;
+  padding: 100px 0 30px 0;
+}
+p {
+  margin-bottom: 30px;
 }
