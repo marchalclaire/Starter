@@ -7,10 +7,12 @@
     <title>My app</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <!--lien de icon flèche de la collection (https://ionicons.com/usage)------------------------>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </head>
 
   <body>
-    <!-------------------- NAV -------------------->
+    <!------------------------------ NAV ------------------------------->
     <header>
       <h1 class="logo">my design</h1>
       <nav>
@@ -48,42 +50,58 @@
     </section>
 
     <!-------------------- COLLECTION -------------------->
-
-    <section class="collection-container">
+    <section class="collection">
       <div class="container-head">
         <span class="title"><a href="#">Collection</a></span>
-        <span class="title-2"><a href="#">See more</a></span>
+        <span class="title-1">
+          <a href="#">See more</a><ion-icon name="arrow-forward"></ion-icon>
+        </span>
       </div>
 
       <div class="container-img">
-        <img src="img/img-1.jpg" alt="photo 1" />
-        <img src="img/img-2.jpg" alt="photo 2" />
-        <img src="img/img-3.jpg" alt="photo 3" />
-        <img src="img/img-4.jpg" alt="photo 4" />
-        <img src="img/img-5.jpg" alt="photo 5" />
-      </div>
-
-      <div class="text">
-        <span class="category"><a href="#">Objets Design</a></span>
-        <span class="link-galery"><a href="#">EXPLORE</a></span>
-      </div>
-      <div class="text">
-        <span class="category"><a href="#">Vases</a></span>
-        <span class="link-galery"><a href="#">EXPLORE</a></span>
-      </div>
-      <div class="text">
-        <span class="category"><a href="#">Miroirs</a></span>
-        <span class="link-galery"><a href="#">EXPLORE</a></span>
-      </div>
-      <div class="text">
-        <span class="category"><a href="#">Poufs</a></span>
-        <span class="link-galery"><a href="#">EXPLORE</a></span>
-      </div>
-      <div class="text">
-        <span class="category"><a href="#">Petits-mobiliers</a></span>
-        <span class="link-galery"><a href="#">EXPLORE</a></span>
+        <!-- slide 01 -->
+        <div class="slide">
+          <img src="img/img-1.jpg" alt="photo 1" />
+          <div class="text">
+            <h3>Objets Design</h3>
+            <a class="link-category" href="#">EXPLORE</a>
+          </div>
+        </div>
+        <!-- slide 02 -->
+        <div class="slide">
+          <img src="img/img-2.jpg" alt="photo 2" />
+          <div class="text">
+            <h3>Vases</h3>
+            <a class="link-category" href="#">EXPLORE</a>
+          </div>
+        </div>
+        <!-- slide 03 -->
+        <div class="slide">
+          <img src="img/img-3.jpg" alt="photo 3" />
+          <div class="text">
+            <h3>Miroirs</h3>
+            <a class="link-category" href="#">EXPLORE</a>
+          </div>
+        </div>
+        <!-- slide 04 -->
+        <div class="slide">
+          <img src="img/img-4.jpg" alt="photo 4" />
+          <div class="text">
+            <h3>Poufs</h3>
+            <a class="link-category" href="#">EXPLORE</a>
+          </div>
+        </div>
+        <!-- slide 05-->
+        <div class="slide">
+          <img src="img/img-5.jpg" alt="photo 5" />
+          <div class="text">
+            <h3>Petit-mobilier</h3>
+            <a class="link-category" href="#">EXPLORE</a>
+          </div>
+        </div>
       </div>
     </section>
+    <!-------------------- GALERY PRODUCTS -------------------->
 
     <!--------------------------------------------------------------->
     <script src="./js/main.js"></script>

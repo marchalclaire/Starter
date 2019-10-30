@@ -17,6 +17,7 @@
   --black: #1e1e1e;
   --white: #ffffff;
   --yellow: #ffcc33;
+  --grey: rgba(218, 210, 210, 0.817);
 }
 
 body {
@@ -112,13 +113,39 @@ nav {
   color: var(--black);
   font-size: 1.5vw;
   font-weight: bold;
-  border: 2px solid rgba(218, 210, 210, 0.817);
   padding: 15px 25px;
   border-radius: 4px;
-  background-color: rgba(218, 210, 210, 0.817);
+  background-color: var(--grey);
   transform: rotate(-3deg);
 }
+.title-1 {
+  display: flex;
+  align-items: center;
+}
+
+.title-1 ion-icon {
+  margin-left: 10px;
+}
+
 .container-img {
   display: flex;
-  overflow: scroll;
+  overflow-x: scroll;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+}
+.link-category {
+  color: var(--black);
+  font-size: 1vw;
+  border-bottom: 3px solid var(--grey);
+}
+.slide {
+  margin-right: 50px;
+  width: 500px;
+  flex-shrink: 0;
 }
