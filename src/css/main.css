@@ -672,8 +672,8 @@ h8 {
 }
 @media (max-width: 320px) {
   .box {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 2rem;
     padding: 2rem;
   }
@@ -681,6 +681,12 @@ h8 {
     height: 30vh;
   }
   h5 {
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
+  }
+  text-box {
+    margin-top: 1rem;
+  }
+  p {
+    margin-bottom: -10px;
   }
 }
