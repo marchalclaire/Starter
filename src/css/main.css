@@ -153,9 +153,9 @@ nav {
   border-bottom: 3px solid var(--light-grey);
 }
 .slide {
-  margin-right: 50px;
-  margin-top: 0px;
+  padding-right: 1.5em;
   width: 500px;
+  height: 590px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
@@ -458,17 +458,23 @@ h8 {
     padding: 4px 14px;
   }
 }
+
+.slide {
+  margin-right: 2.5em;
+  width: 500px;
+  height: 590px;
+}
+
 @media (max-width: 1024px) {
   .slide img {
     width: 350px;
     height: 350px;
   }
   .slide {
-    margin-right: -30px;
-    width: 450px;
-  }
-  .text {
-    height: 70px;
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 400px;
+    height: 500px;
   }
 }
 @media (max-width: 768px) {
@@ -477,8 +483,10 @@ h8 {
     height: 300px;
   }
   .slide {
-    margin-right: -50px;
-    width: 400px;
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 350px;
+    height: 450px;
   }
   .text {
     margin-bottom: -15px;
@@ -490,11 +498,13 @@ h8 {
     height: 250px;
   }
   .slide {
-    margin-right: -70px;
-    width: 350px;
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 300px;
+    height: 350px;
   }
   .text {
-    margin-bottom: -25px;
+    margin-bottom: -5px;
   }
 }
 @media (max-width: 320px) {
@@ -503,11 +513,13 @@ h8 {
     height: 200px;
   }
   .slide {
-    margin-right: -90px;
-    width: 300px;
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 220px;
+    height: 250px;
   }
   .text {
-    margin-bottom: -35px;
+    margin-bottom: -5px;
   }
 }
 
@@ -609,11 +621,26 @@ h8 {
     margin-right: -60px;
   }
 }
-/* ----------------- BOX -------------------- */
+@media (max-width: 576px) {
+  .container-bottom {
+    padding: 2rem 7rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-bottom {
+    padding: 2rem 6rem;
+  }
+}
+
+/* ----------------- ABOUT -------------------- */
 @media (max-width: 1400px) {
   .box {
     width: 600px;
     height: 600px;
+  }
+  .about {
+    height: 80vh;
   }
 }
 @media (max-width: 1200px) {
@@ -621,16 +648,39 @@ h8 {
     width: 550px;
     height: 550px;
   }
+  .about {
+    height: 70vh;
+  }
 }
 @media (max-width: 768px) {
   .box {
     width: 450px;
     height: 450px;
   }
+  .about {
+    height: 60vh;
+  }
 }
 @media (max-width: 576px) {
   .box {
     width: 350px;
     height: 350px;
+  }
+  .about {
+    height: 50vh;
+  }
+}
+@media (max-width: 320px) {
+  .box {
+    width: 200px;
+    height: 200px;
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .about {
+    height: 30vh;
+  }
+  h5 {
+    padding-bottom: 2rem;
   }
 }
